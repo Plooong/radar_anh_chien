@@ -2,16 +2,16 @@
     "title": "Tech Radar",
     "date": "2024.06",
     "quadrants": [
-        {"name": "Languages"},
-        {"name": "Infrastructure"},
-        {"name": "Datastores"},
-        {"name": "Data Management"}
+        {"name": "Languages", "title": "languages"},
+        {"name": "Infrastructure", "title": "infrastructure"},
+        {"name": "Datastores", "title": "datastores"},
+        {"name": "Data Management", "title": "data_management"}
       ],
     "rings": [
-        {"name": "ADOPT", "color":"#5ba300"},
-        {"name": "TRIAL", "color":"#009eb0"},
-        {"name": "ASSESS", "color":"#c7ba00"},
-        {"name": "HOLD", "color": "#e09b96"}
+        {"name": "ADOPT", "color":"#5ba300", "id": "adopt"},
+        {"name": "TRIAL", "color":"#009eb0", "id": "trial"},
+        {"name": "ASSESS", "color":"#c7ba00", "id": "assess"},
+        {"name": "HOLD", "color": "#e09b96", "id": "hold"}
     ],
     "entries": [
       {
@@ -19,42 +19,60 @@
         "ring": 1,
         "label": "AWS Athena",
         "active": true,
-        "moved": 1
+        "moved": 1,
+        "key": "aws_athena",
+        "id": "aws_athena",
+        "title": "AWS Athena"
       },
       {
         "quadrant": 3,
         "ring": 0,
         "label": "AWS EMR",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_emr",
+        "id": "aws_emr",
+        "title": "AWS EMR"
       },
       {
         "quadrant": 3,
         "ring": 2,
         "label": "AWS Glue",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_glue",
+        "id": "aws_glue",
+        "title": "AWS Glue"
       },
       {
         "quadrant": 3,
         "ring": 2,
         "label": "AWS Lake Formation",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_lake_formation",
+        "id": "aws_lake_formation",
+        "title": "AWS Lake Formation"
       },
       {
         "quadrant": 3,
         "ring": 0,
         "label": "Airflow",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "airflow",
+        "id": "airflow",
+        "title": "Airflow"
       },
       {
         "quadrant": 3,
         "ring": 0,
         "label": "Databricks",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "databricks",
+        "id": "databricks",
+        "title": "Databricks"
       },
       {
         "quadrant": 3,
@@ -62,21 +80,30 @@
         "label": "Flink",
         "link": "https://engineering.zalando.com/tags/apache-flink.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "flink",
+        "id": "flink",
+        "title": "Flink"
       },
       {
         "quadrant": 3,
         "ring": 1,
         "label": "Google BigQuery",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "google_bigquery",
+        "id": "google_bigquery",
+        "title": "Google BigQuery"
       },
       {
         "quadrant": 3,
         "ring": 1,
         "label": "Presto",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "presto",
+        "id": "presto",
+        "title": "Presto"
       },
       {
         "quadrant": 3,
@@ -84,35 +111,50 @@
         "label": "Spark",
         "link": "https://engineering.zalando.com/tags/apache-spark.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "spark",
+        "id": "spark",
+        "title": "Spark"
       },
       {
         "quadrant": 3,
         "ring": 2,
         "label": "Streamlit",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "streamlit",
+        "id": "streamlit",
+        "title": "Streamlit"
       },
       {
         "quadrant": 3,
         "ring": 1,
         "label": "dbt",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "dbt",
+        "id": "dbt",
+        "title": "dbt"
       },
       {
         "quadrant": 2,
         "ring": 0,
         "label": "AWS DynamoDB",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_dynamodb",
+        "id": "aws_dynamodb",
+        "title": "AWS DynamoDB"
       },
       {
         "quadrant": 2,
         "ring": 0,
         "label": "AWS S3",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_s3",
+        "id": "aws_s3",
+        "title": "AWS S3"
       },
       {
         "quadrant": 2,
@@ -120,28 +162,40 @@
         "label": "Amazon ElastiCache",
         "link": "https://engineering.zalando.com/tags/redis.html",
         "active": true,
-        "moved": 1
+        "moved": 1,
+        "key": "aws_elasticache",
+        "id": "aws_elasticache",
+        "title": "AWS ElastiCache"
       },
       {
         "quadrant": 2,
         "ring": 2,
         "label": "Amazon MemoryDB",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_memory_db",
+        "id": "aws_memory_db",
+        "title": "AWS MemoryDB"
       },
       {
         "quadrant": 2,
         "ring": 1,
         "label": "Amazon Redshift",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_redshift",
+        "id": "aws_redshift",
+        "title": "AWS Redshift"
       },
       {
         "quadrant": 2,
         "ring": 1,
         "label": "Amazon Feature Store",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_feature_store",
+        "id": "aws_feature_store",
+        "title": "AWS Feature Store"
       },
       {
         "quadrant": 2,
@@ -149,21 +203,30 @@
         "label": "Apache Cassandra",
         "link": "https://engineering.zalando.com/tags/cassandra.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "cassandra",
+        "id": "cassandra",
+        "title": "Apache Cassandra"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "Consul",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "consul",
+        "id": "consul",
+        "title": "Consul"
       },
       {
         "quadrant": 2,
         "ring": 1,
         "label": "Druid",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "druid",
+        "id": "druid",
+        "title": "Druid"
       },
       {
         "quadrant": 2,
@@ -171,63 +234,90 @@
         "label": "Elasticsearch",
         "link": "https://engineering.zalando.com/tags/elasticsearch.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "elasticsearch",
+        "id": "elasticsearch",
+        "title": "Elasticsearch"
       },
       {
         "quadrant": 2,
         "ring": 0,
         "label": "Exasol",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "exasol",
+        "id": "exasol",
+        "title": "Exasol"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "HBase",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "hbase",
+        "id": "hbase",
+        "title": "HBase"
       },
       {
         "quadrant": 2,
         "ring": 1,
         "label": "HDFS",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "hdfs",
+        "id": "hdfs",
+        "title": "HDFS"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "Hazelcast",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "hazelcast",
+        "id": "hazelcast",
+        "title": "Hazelcast"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "Memcached",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "memcached",
+        "id": "memcached",
+        "title": "Memcached"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "MongoDB",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "mongodb",
+        "id": "mongodb",
+        "title": "MongoDB"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "MySQL",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "mysql",
+        "id": "mysql",
+        "title": "MySQL"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "Oracle DB",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "oracledb",
+        "id": "oracledb",
+        "title": "Oracle DB"
       },
       {
         "quadrant": 2,
@@ -235,7 +325,10 @@
         "label": "PostgreSQL",
         "link": "https://engineering.zalando.com/tags/postgresql.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "postgresql",
+        "id": "postgresql",
+        "title": "PostgreSQL"
       },
       {
         "quadrant": 2,
@@ -243,21 +336,30 @@
         "label": "Redis",
         "link": "https://engineering.zalando.com/tags/redis.html",
         "active": true,
-        "moved": -1
+        "moved": -1,
+        "key": "redis",
+        "id": "redis",
+        "title": "Redis"
       },
       {
         "quadrant": 2,
         "ring": 2,
         "label": "RocksDB",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "rocksdb",
+        "id": "rocksdb",
+        "title": "RocksDB"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "Solr",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "solr",
+        "id": "solr",
+        "title": "Solr"
       },
       {
         "quadrant": 2,
@@ -265,77 +367,110 @@
         "label": "Valkey",
         "link": "https://engineering.zalando.com/tags/redis.html",
         "active": true,
-        "moved": 2
+        "moved": 2,
+        "key": "valkey",
+        "id": "valkey",
+        "title": "Valkey"
       },
       {
         "quadrant": 2,
         "ring": 3,
         "label": "ZooKeeper",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "zookeeper",
+        "id": "zookeeper",
+        "title": "ZooKeeper"
       },
       {
         "quadrant": 1,
         "ring": 0,
         "label": "AWS CloudFormation",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_cloudformation",
+        "id": "aws_cloudformation",
+        "title": "AWS CloudFormation"
       },
       {
         "quadrant": 1,
         "ring": 0,
         "label": "AWS CloudFront",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_cloudfront",
+        "id": "aws_cloudfront",
+        "title": "AWS CloudFront"
       },
       {
         "quadrant": 1,
         "ring": 1,
         "label": "AWS Elemental MediaConvert",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_elemental_mediaconvert",
+        "id": "aws_elemental_mediaconvert",
+        "title": "AWS Elemental MediaConvert"
       },
       {
         "quadrant": 1,
         "ring": 1,
         "label": "AWS Lambda",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_lambda",
+        "id": "aws_lambda",
+        "title": "AWS Lambda"
       },
       {
         "quadrant": 1,
         "ring": 2,
         "label": "AWS Service Catalog",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_service_catalog",
+        "id": "aws_service_catlog",
+        "title": "AWS Service Catalog"
       },
       {
         "quadrant": 1,
         "ring": 1,
         "label": "AWS Step Functions",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_step_functions",
+        "id": "aws_step_functions",
+        "title": "AWS Step Functions"
       },
       {
         "quadrant": 1,
         "ring": 2,
         "label": "Amazon Bedrock",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_bedrock",
+        "id": "aws_bedrock",
+        "title": "AWS Bedrock"
       },
       {
         "quadrant": 1,
         "ring": 2,
         "label": "Amazon Pinpoint",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_pinpoint",
+        "id": "aws_pinponit",
+        "title": "Amazon Pinpoint"
       },
       {
         "quadrant": 1,
         "ring": 0,
         "label": "Amazon SageMaker",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_sagemaker",
+        "id": "aws_sagemaker",
+        "title": "Amazon SageMaker"
       },
       {
         "quadrant": 1,
@@ -343,21 +478,30 @@
         "label": "Docker",
         "link": "https://engineering.zalando.com/tags/docker.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "docker",
+        "id": "docker",
+        "title": "Docker"
       },
       {
         "quadrant": 1,
         "ring": 2,
         "label": "GraalVM",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "graalvm",
+        "id": "graalvm",
+        "title": "GraalVM"
       },
       {
         "quadrant": 1,
         "ring": 2,
         "label": "Kotlin Multiplatform",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "kotlin_multiplatform",
+        "id": "kotlin_multiplatform",
+        "title": "Kotlin Multiplatform"
       },
       {
         "quadrant": 1,
@@ -365,49 +509,70 @@
         "label": "Kubernetes",
         "link": "https://engineering.zalando.com/tags/kubernetes.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "kubernetes",
+        "id": "kubernetes",
+        "title": "Kubernetes"
       },
       {
         "quadrant": 1,
         "ring": 1,
         "label": "Open Policy Agent",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "open_policy_agent",
+        "id": "open_policy_agent",
+        "title": "Open Policy Agent"
       },
       {
         "quadrant": 1,
         "ring": 0,
         "label": "OpenTelemetry",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "open_telemetry",
+        "id": "open_telemetry",
+        "title": "OpenTelemetry"
       },
       {
         "quadrant": 1,
         "ring": 0,
         "label": "Skipper",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "skippier",
+        "id": "skippier",
+        "title": "Skipper"
       },
       {
         "quadrant": 1,
         "ring": 2,
         "label": "Slurm",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "slurm",
+        "id": "slurm",
+        "title": "Slurm"
       },
       {
         "quadrant": 1,
         "ring": 1,
         "label": "WebAssembly",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "web_assembly",
+        "id": "web_assembly",
+        "title": "WebAssembly"
       },
       {
         "quadrant": 1,
         "ring": 0,
         "label": "ZMON",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "zmon",
+        "id": "zmon",
+        "title": "ZMON"
       },
       {
         "quadrant": 0,
@@ -415,14 +580,20 @@
         "label": "Clojure",
         "link": "https://engineering.zalando.com/tags/clojure.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "clojure",
+        "id": "clojure",
+        "title": "Clojure"
       },
       {
         "quadrant": 0,
         "ring": 1,
         "label": "Dart",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "dart",
+        "id": "dart",
+        "title": "Dart"
       },
       {
         "quadrant": 0,
@@ -430,7 +601,10 @@
         "label": "Go",
         "link": "https://engineering.zalando.com/tags/golang.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "go",
+        "id": "go",
+        "title": "Go"
       },
       {
         "quadrant": 0,
@@ -438,7 +612,10 @@
         "label": "GraphQL",
         "link": "https://engineering.zalando.com/tags/graphql.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "graphql",
+        "id": "graphql",
+        "title": "GraphQL"
       },
       {
         "quadrant": 0,
@@ -446,7 +623,10 @@
         "label": "Haskell",
         "link": "https://engineering.zalando.com/tags/haskell.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "haskell",
+        "id": "haskell",
+        "title": "Haskell"
       },
       {
         "quadrant": 0,
@@ -454,7 +634,10 @@
         "label": "Java",
         "link": "https://engineering.zalando.com/tags/java.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "java",
+        "id": "java",
+        "title": "Java"
       },
       {
         "quadrant": 0,
@@ -462,7 +645,10 @@
         "label": "JavaScript",
         "link": "https://engineering.zalando.com/tags/javascript.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "javascript",
+        "id": "javascript",
+        "title": "Javascript"
       },
       {
         "quadrant": 0,
@@ -470,7 +656,10 @@
         "label": "Kotlin",
         "link": "https://engineering.zalando.com/tags/kotlin.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "kotlin",
+        "id": "kotlin",
+        "title": "Kotlin"
       },
       {
         "quadrant": 0,
@@ -478,7 +667,10 @@
         "label": "OpenAPI (Swagger)",
         "link": "https://engineering.zalando.com/tags/openapi.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "openapi",
+        "id": "openapi",
+        "title": "OpenAPI (Swagger)"
       },
       {
         "quadrant": 0,
@@ -486,14 +678,20 @@
         "label": "Python",
         "link": "https://engineering.zalando.com/tags/python.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "python",
+        "id": "python",
+        "title": "Python"
       },
       {
         "quadrant": 0,
         "ring": 2,
         "label": "R",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "r",
+        "id": "r",
+        "title": "R"
       },
       {
         "quadrant": 0,
@@ -501,7 +699,10 @@
         "label": "Rust",
         "link": "https://engineering.zalando.com/tags/rust.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "rust",
+        "id": "rust",
+        "title": "Rust"
       },
       {
         "quadrant": 0,
@@ -509,7 +710,10 @@
         "label": "Scala",
         "link": "https://engineering.zalando.com/tags/scala.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "scala",
+        "id": "scala",
+        "title": "Scala"
       },
       {
         "quadrant": 0,
@@ -517,7 +721,10 @@
         "label": "Swift",
         "link": "https://engineering.zalando.com/tags/swift.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "swift",
+        "id": "swift",
+        "title": "Swift"
       },
       {
         "quadrant": 0,
@@ -525,28 +732,40 @@
         "label": "TypeScript",
         "link": "https://engineering.zalando.com/tags/typescript.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "typescript",
+        "id": "typescript",
+        "title": "TypeScript"
       },
       {
         "quadrant": 3,
         "ring": 0,
         "label": "AWS Kinesis",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_kinesis",
+        "id": "aws_kinesis",
+        "title": "AWS Kinesis"
       },
       {
         "quadrant": 3,
         "ring": 0,
         "label": "AWS SNS",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_sns",
+        "id": "aws_sns",
+        "title": "AWS SNS"
       },
       {
         "quadrant": 3,
         "ring": 0,
         "label": "AWS SQS",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "aws_sqs",
+        "id": "aws_sqs",
+        "title": "AWS SQS"
       },
       {
         "quadrant": 3,
@@ -554,15 +773,10 @@
         "label": "Kafka",
         "link": "https://engineering.zalando.com/tags/apache-kafka.html",
         "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Nakadi",
-        "link": "https://nakadi.io",
-        "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "kafka",
+        "id": "kafka",
+        "title": "Kafka"
       },
       {
         "quadrant": 3,
@@ -570,7 +784,10 @@
         "label": "RabbitMQ",
         "link": "https://engineering.zalando.com/tags/rabbitmq.html",
         "active": true,
-        "moved": 0
+        "moved": 0,
+        "key": "rabbitmq",
+        "id": "rabbitmq",
+        "title": "RabbitMQ"
       }
     ]
   }
